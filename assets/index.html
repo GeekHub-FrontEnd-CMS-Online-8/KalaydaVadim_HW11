@@ -7,15 +7,7 @@
 	<link rel="stylesheet" href="css/main.css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-	<script
-        src="http://code.jquery.com/jquery-3.3.1.min.js"
-        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous">
-    </script>
-    <script>
-        
-    </script>    
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">   
 </head>
 <body>
 
@@ -68,7 +60,7 @@
 					<h2 class="top__center-content-h2">we are atlantida</h2>
 					<img class="top__center-content-bottom-line" src="img/top-line.png" alt="Bottom Line">
 					<div class="top-center-content-bottom">
-						<a href="#about" class="top__center-content-bottom-button">Get Started</a>
+						<a id="scroll" href="#about" class="top__center-content-bottom-button" onclick="slowScroll('#about')">Get Started</a>
 						<img class="top__center-content-bottom-button-yakor" src="img/top-yakor.png" alt="Yakor">
 					</div>
 				</div>
@@ -112,7 +104,8 @@
 			</div>
 		</div>
 
-		<div class="about" id="about">
+		<div class="about">
+		<a id="about" name="about"></a>
 			<div class="about__container">
 				<img class="about__top" src="img/about-top.png" alt="About Top Image">
 				<div class="about__center">
@@ -411,5 +404,16 @@ Etiam iaculis, nibh a lobortis egestas, est urna sodales</p>
 		</div>
 	</main>
 
+
+
+
+
+
+<script
+  src="http://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous">
+</script>
+<script type="text/javascript" src="js/slow.js"></script>
 </body>
 </html>
