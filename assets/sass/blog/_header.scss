@@ -1,0 +1,125 @@
+.header {
+  max-width: 100%;
+  height: 50px;
+  &__container {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+  }
+  &__left {
+    width: 25%;
+  }
+  &__logo {
+    width: 40%;
+    text-transform: uppercase;
+    color: #757575;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    letter-spacing: 1.8px;
+    line-height: 50px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    &-image {
+      margin-right: 12px;
+    }
+  }
+  &__center {
+    width: 50%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: right;
+  }
+  &__navigation {
+    display: flex;
+  }
+  &__navigation-item {
+    list-style: none;
+    margin-left: 7.5px;
+    margin-right: 7.5px;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    &-link {
+      color: rgba(0,0,0, .5);
+      font-size: 12px;
+      font-weight: bold;
+      line-height: 50px;
+      transition: 0.3s;
+      &:hover {
+        color: rgba(0,0,0, .3);
+      }
+      &:active {
+        color: rgba(0,0,0, .8);
+      }
+    }
+  }
+  &__right {
+    width: 25%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &-soc {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      &-link {
+        margin-left: 2px;
+        margin-right: 2px;
+        &-logo {
+          margin-right: 2px
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 460px)and(max-width: 672px) {
+  .header {
+    height: 100px;
+    &__container {
+      width: 95%;
+      align-items: flex-start;
+    }
+    &__center {
+      margin-top: 60px;
+    }
+    &__navigation {
+      width: 400px;
+      flex-wrap: wrap;
+    }
+    &__navigation-item {
+      margin-top: -30px;
+    }
+  }
+}
+
+@media (min-width: 673px)and(max-width: 1004px) {
+  .header {
+    &__container {
+      width: 95%;
+    }
+    &__navigation {
+      width: 400px;
+      flex-wrap: wrap;
+      margin-top: 45px;
+      margin-left: 40px;
+    }
+    &__navigation-item {
+      margin-top: -30px;
+    }
+  }
+}
+
+@media (min-width: 1005px)and(max-width: 1262px) {
+  .header {
+    &__container {
+      width: 95%;
+    }
+  }
+}

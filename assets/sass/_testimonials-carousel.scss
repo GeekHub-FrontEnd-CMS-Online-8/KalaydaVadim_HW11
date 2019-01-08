@@ -1,0 +1,148 @@
+.slider {
+  position: relative;
+  width: 600px;
+  margin: 50px auto;
+}
+
+.slider {
+  input[name="switch"] {
+  display: none;
+  }
+} 
+
+.switch {
+  position: absolute;
+  left: 0;
+  bottom: -40px;
+  text-align: center;
+  width: 100%;
+}
+
+.switch {
+  label {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  cursor: pointer;
+  margin: 0 0px;
+  box-shadow: 0 0 2px 0 rgba(255, 255, 255, .8);
+  border-radius: 50%;
+  border: 6px solid rgba(255, 255, 255, .5);
+  background-color: rgba(255, 255, 255, .3);
+}
+}
+
+#btn1:checked~.switch label[for="btn1"] {
+  background-color: white;
+}
+
+#btn2:checked~.switch label[for="btn2"] {
+  background-color: white;
+}
+
+#btn3:checked~.switch label[for="btn3"] {
+  background-color: white;
+}
+
+.slider-inner {
+  overflow: hidden;
+}
+
+.slides {
+  width: 300%;
+  transition: all 0.5s;
+}
+
+.slides {
+  .slide {
+    width: 600px;
+    height: 420px;
+    float: left;
+    .slide__content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      &-img {
+        margin-top: 75px;
+      }
+      &-text-under-photo {
+        color: #efefef;
+        font-family: "Crimson Text";
+        font-size: 20px;
+        font-style: italic;
+        line-height: 24px;
+        &-start {
+          position: relative;
+          bottom: 5px;
+        }
+        &-end {
+          position: relative;
+          top: 15px;
+        }
+      }
+      &-name {
+        color: #e3e3e3;
+        font-family: "Montserrat", sans-serif;
+        font-size: 13px;
+        line-height: 18px;
+        text-transform: uppercase;
+        letter-spacing: 1.47px;
+        margin-top: 45px;
+      }
+      &-psd {
+        font-size: 13px;
+        font-style: italic;
+        line-height: 24px;
+        color: #efefef;
+        font-family: "Crimson Text", sans-serif;
+        margin-top: 0px;
+      }
+    }
+  }
+}
+
+#btn1:checked~slider-inner slides {
+  margin-left: 0;
+}
+
+#btn2:checked~.slider-inner .slides {
+  margin-left: -600px;
+}
+
+#btn3:checked~.slider-inner .slides {
+  margin-left: -1200px;
+}
+
+@media (min-width: 460px)and(max-width: 520px) {
+  .slides {
+    .slide {
+      height: 450px;
+      .slide__content {
+        margin-right: 120px;
+        &-text-under-photo {
+          max-width: 300px;
+        }
+      }
+    }
+  }
+  .switch {
+    margin-left: -50px;
+  }
+}
+
+@media (min-width: 521px)and(max-width: 594px) {
+  .slides {
+    .slide {
+      .slide__content {
+        margin-right: 0px;
+        &-text-under-photo {
+          max-width: 400px;
+        }
+      }
+    }
+  }
+  .switch {
+    margin-left: -50px;
+  }
+}

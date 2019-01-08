@@ -1,0 +1,36 @@
+.top {
+    width: 100%;
+    height: 396px;
+    background-image: url(../../img/post-top-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    &__container {
+        width: 80%;
+        height: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    &-headline {
+        color: #fff;
+        font-family: "Raleway", sans-serif;
+        font-size: 36px;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 0.89px;
+    }
+    &-line {
+        margin-top: -10px;
+    }
+    &-text {
+        color: #fff;
+        font-family: "Crimson Text";
+        font-size: 14px;
+        letter-spacing: 1.4px;
+        line-height: 50px;
+    }
+}

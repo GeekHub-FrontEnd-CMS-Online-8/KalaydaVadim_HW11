@@ -1,0 +1,104 @@
+.team {
+  width: 100%;
+  height: 665px;
+  background-image: url(../img/team-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  &__container{
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  &-h2 {
+    margin-top: 55px;
+  }
+  &-line {
+    margin-top: 5px;
+  }
+  &-paragraph {
+    max-width: 990px;
+    color: #3e3d3d;
+    font-family: "Crimson Text", sans-serif;
+    letter-spacing: 1.4px;
+    line-height: 25px;
+    font-size: 14px;
+  }
+  &__bottom {
+    width: 100%;
+    height: 100%;
+    &__content {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      margin-top: 55px;
+      flex-wrap: wrap;
+      &__block {
+        margin-left: 15.5px;
+        margin-right: 15.5px;
+        margin-top: 20px;
+      }
+      &__block1 {
+        width: 271px;
+        height: 338px;
+        background: url(../img/team-image1.png);
+        &-hover {
+          margin-top: 8px;
+          opacity: 0;
+          transition: 0.3s;
+        }
+        &:hover &-hover {
+          opacity: 1;
+        }
+      }
+      &__block2 {
+        width: 271px;
+        height: 338px;
+        background: url(../img/team-image2.png);
+        &-hover {
+          margin-top: 8px;
+          opacity: 0;
+          transition: 0.3s;
+        }
+        &:hover &-hover {
+          opacity: 1;
+        }
+      }
+      &__block3 {
+        width: 271px;
+        height: 338px;
+        background: url(../img/team-image3.png);
+        &-hover {
+          margin-top: 8px;
+          opacity: 0;
+          transition: 0.3s;
+        }
+        &:hover &-hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 460px)and(max-width: 481px) {
+  .team {
+    height: 695px;
+  }
+}
+
+@media (min-width: 460px)and(max-width: 755px) {
+  .team {
+    height: 1470px;
+  }
+}
+
+@media (min-width: 755px)and(max-width: 1133px) {
+  .team {
+    height: 1070px;
+  }
+}

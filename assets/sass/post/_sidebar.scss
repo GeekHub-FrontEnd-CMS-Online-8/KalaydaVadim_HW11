@@ -1,0 +1,178 @@
+.sidebar {
+    width: 30%;
+    min-height: 100%;
+    &__container {
+        width: 80%;
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    &__form {
+        display: flex;
+        margin-top: 88px;
+        &-search {
+            width: 250px;
+            height: 39px;
+            border: 2px solid #a8a8a8;
+            border-right: 2px solid transparent;
+            background: transparent;
+            color: #3e3d3d;
+            font-family: "Crimson Text", sans-serif;
+            font-size: 14px;
+            font-style: italic;
+            line-height: 18px;
+            padding-left: 15px;
+            transition: 0.2s;
+            &:focus {
+                width: 255px;
+            }
+        }
+        &-button {
+            width: 50px;
+            height: 39px;
+            border: 2px solid #a8a8a8;
+            border-left: 2px solid transparent;
+            background: transparent;
+            position: relative;
+            right: 3px;
+        }
+    }
+    &-h2 {
+        color: #3e3d3d;
+        font-family: "Montserrat", sans-serif;
+        font-size: 16px;
+        line-height: 18px;
+        letter-spacing: 1.81px;
+        text-transform: uppercase;
+        margin-top: 38px;
+    }
+    &__posts {
+        display: flex;
+        flex-direction: column;
+        margin-top: -12px;
+        &__post {
+            max-width: 300px;
+            min-height: 145px;
+            display: flex;
+            border-bottom: 1px solid #b7b7b7;
+            margin-top: 35px;
+            &-img {
+                max-width: 113px;
+                height: 109px;
+            }
+            &__text {
+                display: flex;
+                flex-direction: column;
+                margin-left: 19px;
+                &-h3 {
+                    max-width: 136px;
+                    color: #3e3d3d;
+                    font-family: "Montserrat", sans-serif;
+                    font-size: 12px;
+                    line-height: 15px;
+                    text-transform: uppercase;
+                    letter-spacing: 1.2px;
+                    margin-top: -2px;
+                }
+                &-p {
+                    color: #3e3d3d;
+                    font-family: "Crimson Text", sans-serif;
+                    font-size: 14px;
+                    line-height: 25px;
+                    font-style: italic;
+                    letter-spacing: 1.4px;
+                    margin-top: 0px;
+                }
+            }
+        }
+        &__lastpost {
+            border-bottom: 1px solid transparent;
+        }
+    }
+    &__categories {
+        max-width: 300px;
+        display: flex;
+        flex-direction: column;
+        &__categorie {
+            min-height: 60px;
+            border-bottom: 1px solid #b7b7b7;
+            display: flex;
+            align-items: center;
+            &-text {
+                color: #3e3d3d;
+                font-family: "Crimson Text", sans-serif;
+                font-size: 16px;
+                font-style: italic;
+                line-height: 15px;
+            }
+        }
+    }
+    &-h2-archives {
+        margin-top: 60px;    
+    }
+    &__archives {
+        max-width: 300px;
+        display: flex;
+        flex-direction: column;
+        &__archive {
+            min-height: 60px;
+            border-bottom: 1px solid #b7b7b7;
+            display: flex;
+            align-items: center;
+            &-text {
+                color: #3e3d3d;
+                font-family: "Crimson Text", sans-serif;
+                font-size: 16px;
+                font-style: italic;
+                line-height: 15px;
+            }
+        }
+    }
+    &-h2-flickr {
+        margin-top: 60px;
+    }
+    &__flickr {
+        max-width: 300px;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 10px;
+        &-item {
+            margin-top: 10px;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+    }
+}
+
+@media (min-width: 460px)and(max-width: 1002px) {
+    .sidebar {
+        &__container {
+            width: 95%;
+        }
+    }
+}
+
+@media (min-width: 460px)and(max-width: 776px) {
+    .sidebar {
+        &__posts {
+            &__post {
+                flex-direction: column;
+                &__text {
+                    margin-top: 15px;
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 460px)and(max-width: 612px) {
+    .sidebar {
+        &__form {
+            display: none;
+        }
+        &-h2 {
+            margin-top: 88px;
+        }
+    }
+}
